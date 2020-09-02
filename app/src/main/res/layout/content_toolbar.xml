@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+  <androidx.appcompat.widget.AppCompatImageView
+    android:id="@+id/imageBack"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_10dp"
+    android:padding="@dimen/_8dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/ic_arrow_back" />
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/textHeader"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_16dp"
+    android:textColor="@color/black"
+    android:textSize="@dimen/_16sp"
+    android:singleLine="true"
+    android:ellipsize="end"
+    app:layout_constraintStart_toEndOf="@id/imageBack"
+    app:layout_constraintTop_toTopOf="@id/imageBack"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginEnd="@dimen/_16sp"
+    app:layout_constraintBottom_toBottomOf="@+id/imageBack"
+    android:textStyle="bold"
+    tools:text="Title" />
+
+</merge>

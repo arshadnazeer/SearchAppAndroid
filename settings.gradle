@@ -1,0 +1,6 @@
+rootProject.name='SearchApp'
+include ':app'
+include ':network'
+include ':ui'
+include ':domain'
+include ':data'

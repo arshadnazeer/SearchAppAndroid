@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.arshad.ui.helper.InputBlockingView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.95"
+    android:background="@color/colorAccent_80"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:focusedByDefault="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <in.arshad.ui.helper.HorizontalDotedProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:elevation="@dimen/min_widget_padding"
+            android:id="@+id/progress"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/loading"
+            android:layout_below="@+id/progress"
+            android:textSize="@dimen/_14sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</in.arshad.ui.helper.InputBlockingView>
